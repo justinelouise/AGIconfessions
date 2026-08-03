@@ -23,7 +23,7 @@ function Toast() {
   );
 }
 
-/** Approved Anyway — mod pin finder only. */
+/** AGI Confessions generator shell */
 export function GameShell() {
   return (
     <>

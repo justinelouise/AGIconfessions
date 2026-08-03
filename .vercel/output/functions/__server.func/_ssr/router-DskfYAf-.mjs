@@ -1,21 +1,21 @@
 import { o as __toESM } from "../_runtime.mjs";
 import { a as PostgresIntrospector, c as sql, i as PostgresAdapter, n as getKyselyDatabaseType, o as PostgresQueryCompiler, s as CompiledQuery, t as createKyselyAdapter } from "../_libs/@better-auth/kysely-adapter+[...].mjs";
 import { $t as runWithTransaction, A as email, B as base64Url, C as toResponse, D as any, F as record, Gt as ATTR_HOOK_TYPE, H as decodeJwt, I as string, It as betterFetch, Jt as safeJSONParse, Kt as ATTR_OPERATION_ID, M as number, N as object, O as array, P as optional, Qt as runWithAdapter, S as serializeSignedCookie, Tt as JWTExpired, U as decodeProtectedHeader, Ut as withSpan, W as jwtVerify, Wt as ATTR_CONTEXT, Xt as getCurrentAdapter, Yt as getAuthTables, Zt as queueAfterTransactionHook, _ as runWithRequestState, _n as kAPIErrorHeaderSymbol, a as createAuthorizationURL, an as createLogger, b as createRouter$1, c as createRateLimitKey, d as deprecate, en as getBetterAuthVersion, f as createAuthEndpoint, fn as isDevelopment, g as hasRequestState, gn as BetterAuthError, h as defineRequestState, hn as APIError, i as refreshAccessToken, in as createRandomStringGenerator, j as looseObject, k as boolean, l as findInvalidTrustedProxies, ln as env, m as isAPIError, mn as isTest, n as socialProviders, nn as initGetFieldName, o as applyDefaultAccessTokenExpiry, on as logger, p as createAuthMiddleware, pn as isProduction, pt as encode, qt as import_src, r as validateAuthorizationCode, rn as generateId, s as isLoopbackHost, sn as shouldPublishLog, t as SocialProviderListEnum, tn as initGetModelName, u as getIp, v as getCurrentAuthContext, vn as BASE_ERROR_CODES, w as filterOutputFields, x as serializeCookie, y as runWithEndpointContext, zt as normalizePathname } from "../_libs/@better-auth/core+[...].mjs";
-import { a as getOrigin, c as isRequestLike, i as getHost, l as resolveBaseURL, n as PACKAGE_VERSION, o as getProtocol, r as getBaseURL, s as isDynamicBaseURLConfig, t as GENERIC_OAUTH_ERROR_CODES, u as wildcardMatch } from "./error-codes-DmebaV2i.mjs";
+import { a as getHost, c as isDynamicBaseURLConfig, d as wildcardMatch, i as getBaseURL, l as isRequestLike, n as GROK_PROVIDERS, o as getOrigin, r as PACKAGE_VERSION, s as getProtocol, t as GENERIC_OAUTH_ERROR_CODES, u as resolveBaseURL } from "./providers-DD9Wq7fi.mjs";
 import { n as require_react } from "../_libs/@radix-ui/react-compose-refs+[...].mjs";
 import { M as require_jsx_runtime, c as HeadContent, d as Outlet, f as lazyRouteComponent, m as createRootRoute, p as createFileRoute, s as Scripts, u as createRouter } from "../_libs/@tanstack/react-router+[...].mjs";
 import { n as defu, t as createDefu } from "../_libs/defu.mjs";
-import { t as GROK_PROVIDERS } from "./providers-B-AR6wJz.mjs";
+import { n as ALL_CONFESSION_LINES } from "./pins-E4OOG7Rb.mjs";
 import { r as TriangleAlert } from "../_libs/lucide-react.mjs";
 import { n as hkdf, t as sha256 } from "../_libs/noble__hashes.mjs";
 import { i as jwtDecrypt, n as EncryptJWT, r as SignJWT, t as calculateJwkThumbprint } from "../_libs/jose.mjs";
 import { i as verifyPassword, n as binary, r as hashPassword, t as createHMAC } from "../_libs/better-auth__utils.mjs";
-import { n as createHash, t as createTelemetry } from "../_libs/@better-auth/telemetry+[...].mjs";
+import { n as createHash$1, t as createTelemetry } from "../_libs/@better-auth/telemetry+[...].mjs";
 import { a as utf8ToBytes, i as managedNonce, n as bytesToHex, r as hexToBytes, t as xchacha20poly1305 } from "../_libs/noble__ciphers.mjs";
 import { n as string$1, t as boolean$1 } from "../_libs/zod.mjs";
 import { t as Pool } from "../_libs/pg.mjs";
-import { randomBytes } from "node:crypto";
-//#region node_modules/.nitro/vite/services/ssr/assets/router-DvdtpXt6.js
+import { createHash, randomBytes } from "node:crypto";
+//#region node_modules/.nitro/vite/services/ssr/assets/router-DskfYAf-.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 function AppErrorComponent({ error }) {
@@ -152,9 +152,10 @@ function CreatedWithGrokBanner() {
 		]
 	})] });
 }
-var styles_default = "/assets/styles-OWUYLEzv.css";
-var APP_NAME = "Thread Course";
-var Route$3 = createRootRoute({
+var styles_default = "/assets/styles-BWPx_2S1.css";
+var APP_NAME = "AGI Confessions";
+var APP_DESC = "Ever freeze when you see a pretty anime girl? AGI Confessions gives you the right words. Average guy energy. Pure gooner thoughts. Upvote and downvote to train the generator. Check the leaderboard for the most upvoted lines. Remix any confession to make it yours.";
+var Route$4 = createRootRoute({
 	head: () => ({
 		meta: [
 			{ charSet: "utf-8" },
@@ -165,7 +166,7 @@ var Route$3 = createRootRoute({
 			{ title: APP_NAME },
 			{
 				name: "description",
-				content: "Funny Reddit thread course mapper — moderate, engage, and climb the vibecoder ranks with Miko."
+				content: APP_DESC
 			},
 			...[]
 		],
@@ -174,7 +175,7 @@ var Route$3 = createRootRoute({
 			href: styles_default
 		}, {
 			rel: "stylesheet",
-			href: "https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=IBM+Plex+Mono:wght@400;500&family=Syne:wght@500;600;700&display=swap"
+			href: "https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
 		}]
 	}),
 	component: () => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("html", {
@@ -187,10 +188,518 @@ var Route$3 = createRootRoute({
 		] })]
 	})
 });
-var $$splitComponentImporter$1 = () => import("./routes-DXRnYYjU.mjs");
-var Route$2 = createFileRoute("/")({ component: lazyRouteComponent($$splitComponentImporter$1, "component") });
-var $$splitComponentImporter = () => import("./login-C7DkVUbC.mjs");
-var Route$1 = createFileRoute("/login")({ component: lazyRouteComponent($$splitComponentImporter, "component") });
+var $$splitComponentImporter$1 = () => import("./routes-DuG7VP2G.mjs");
+var Route$3 = createFileRoute("/")({ component: lazyRouteComponent($$splitComponentImporter$1, "component") });
+var $$splitComponentImporter = () => import("./login-Dvwmik_p.mjs");
+var Route$2 = createFileRoute("/login")({ component: lazyRouteComponent($$splitComponentImporter, "component") });
+var _0001_auth_default = "-- Better Auth schema (identity + sessions for \"Sign in with Grok\").\n--\n-- Generated by the Better Auth CLI for its Postgres adapter — DO NOT EDIT by\n-- hand. `@/lib/auth/server` runs Better Auth against these tables when\n-- DATABASE_URL is set. The columns are camelCase and MUST stay double-quoted so\n-- Postgres preserves the case Better Auth queries by.\n--\n-- Migrations in this folder are the single source of truth for your schema. They\n-- apply to Neon during the Vercel build (`npm run build`) and to the local\n-- PGLite fallback automatically on startup, so dev matches production. Applied\n-- files are recorded by name in `_migrations` and NEVER run again.\n--\n-- Put YOUR app's schema in NEW ordered files (0002_*.sql, 0003_*.sql, …), never\n-- in this one. For app tables, prefer snake_case and give per-user tables a\n-- `user_id TEXT NOT NULL` column (TEXT, not UUID — the preview dev user id is\n-- the string 'dev-user'), then scope every query to the authenticated user\n-- server-side (see the `neon` + `auth` skills and src/lib/auth/verify.server.ts).\n\ncreate table if not exists \"user\" (\n  \"id\" text not null primary key,\n  \"name\" text not null,\n  \"email\" text not null unique,\n  \"emailVerified\" boolean not null,\n  \"image\" text,\n  \"createdAt\" timestamptz default CURRENT_TIMESTAMP not null,\n  \"updatedAt\" timestamptz default CURRENT_TIMESTAMP not null\n);\n\ncreate table if not exists \"session\" (\n  \"id\" text not null primary key,\n  \"expiresAt\" timestamptz not null,\n  \"token\" text not null unique,\n  \"createdAt\" timestamptz default CURRENT_TIMESTAMP not null,\n  \"updatedAt\" timestamptz not null,\n  \"ipAddress\" text,\n  \"userAgent\" text,\n  \"userId\" text not null references \"user\" (\"id\") on delete cascade\n);\n\ncreate table if not exists \"account\" (\n  \"id\" text not null primary key,\n  \"accountId\" text not null,\n  \"providerId\" text not null,\n  \"userId\" text not null references \"user\" (\"id\") on delete cascade,\n  \"accessToken\" text,\n  \"refreshToken\" text,\n  \"idToken\" text,\n  \"accessTokenExpiresAt\" timestamptz,\n  \"refreshTokenExpiresAt\" timestamptz,\n  \"scope\" text,\n  \"password\" text,\n  \"createdAt\" timestamptz default CURRENT_TIMESTAMP not null,\n  \"updatedAt\" timestamptz not null\n);\n\ncreate table if not exists \"verification\" (\n  \"id\" text not null primary key,\n  \"identifier\" text not null,\n  \"value\" text not null,\n  \"expiresAt\" timestamptz not null,\n  \"createdAt\" timestamptz default CURRENT_TIMESTAMP not null,\n  \"updatedAt\" timestamptz default CURRENT_TIMESTAMP not null\n);\n\ncreate index if not exists \"session_userId_idx\" on \"session\" (\"userId\");\ncreate index if not exists \"account_userId_idx\" on \"account\" (\"userId\");\ncreate index if not exists \"verification_identifier_idx\" on \"verification\" (\"identifier\");\n";
+var _0002_confession_community_default = "-- Shared confession bank + Reddit-style community votes (visible to all users)\n\nCREATE TABLE IF NOT EXISTS confession_bank (\n  id TEXT PRIMARY KEY,\n  body TEXT NOT NULL UNIQUE,\n  style TEXT NOT NULL,\n  ups INTEGER NOT NULL DEFAULT 0,\n  downs INTEGER NOT NULL DEFAULT 0,\n  neutrals INTEGER NOT NULL DEFAULT 0,\n  score INTEGER NOT NULL DEFAULT 0,\n  created_at TIMESTAMPTZ NOT NULL DEFAULT now()\n);\n\nCREATE INDEX IF NOT EXISTS confession_bank_score_idx ON confession_bank (score DESC, ups DESC);\nCREATE INDEX IF NOT EXISTS confession_bank_style_idx ON confession_bank (style);\n\n-- One vote per anonymous voter per confession (1 up, 0 neutral, -1 down)\nCREATE TABLE IF NOT EXISTS confession_votes (\n  voter_id TEXT NOT NULL,\n  confession_id TEXT NOT NULL REFERENCES confession_bank (id) ON DELETE CASCADE,\n  vote SMALLINT NOT NULL CHECK (vote IN (-1, 0, 1)),\n  updated_at TIMESTAMPTZ NOT NULL DEFAULT now(),\n  PRIMARY KEY (voter_id, confession_id)\n);\n\nCREATE INDEX IF NOT EXISTS confession_votes_confession_idx ON confession_votes (confession_id);\n";
+var _0003_leaderboard_comments_default = "-- Leaderboard eligibility (used / heavily upvoted) + comments on board entries\n\nALTER TABLE confession_bank\n  ADD COLUMN IF NOT EXISTS used_count INTEGER NOT NULL DEFAULT 0;\n\nCREATE INDEX IF NOT EXISTS confession_bank_leaderboard_idx\n  ON confession_bank (score DESC, used_count DESC, ups DESC);\n\nCREATE TABLE IF NOT EXISTS confession_comments (\n  id TEXT PRIMARY KEY,\n  confession_id TEXT NOT NULL REFERENCES confession_bank (id) ON DELETE CASCADE,\n  voter_id TEXT NOT NULL,\n  author_label TEXT NOT NULL,\n  body TEXT NOT NULL,\n  created_at TIMESTAMPTZ NOT NULL DEFAULT now()\n);\n\nCREATE INDEX IF NOT EXISTS confession_comments_confession_idx\n  ON confession_comments (confession_id, created_at ASC);\n";
+var rawDatabaseUrl = typeof process !== "undefined" ? process.env.DATABASE_URL : void 0;
+var databaseUrl$1 = rawDatabaseUrl && rawDatabaseUrl.trim() ? rawDatabaseUrl : void 0;
+/**
+* Active backend: real **Neon** when `DATABASE_URL` is set (deployed / configured
+* sandbox), otherwise a local embedded **PGLite** (Postgres compiled to WASM) so
+* the app has a working database even with nothing configured — the live preview
+* included. Swap in Neon later by just setting `DATABASE_URL`; no code changes.
+*/
+var dbSource = databaseUrl$1 ? "neon" : "pglite";
+/**
+* Init state lives on globalThis as promises: dev HMR creates new instances of
+* this module, and two instances racing module-level state would open a second
+* pool or run two concurrent PGLite migration passes (whose duplicate
+* `_migrations` insert rejects — and would get memoized, poisoning every later
+* `getSql()`). A failed init clears its slot so the next call retries.
+*/
+var globalRef = globalThis;
+/**
+* Result-type parity: Postgres sends every value as text plus a type OID — the
+* JS value is the DRIVER's parsing choice, and pg and PGLite disagree (pg:
+* int8 -> string, date -> local-midnight Date; PGLite: int8 -> BigInt, which
+* JSON.stringify rejects, date -> UTC Date). Normalize both so preview and
+* production return identical, JSON-safe shapes:
+*   int8/bigint (incl. count(*)) -> number (past 2^53 loses precision — cast
+*                                   `::text` if you ever need huge integers)
+*   date                         -> 'YYYY-MM-DD' string
+*   interval                     -> Postgres interval text
+* numeric already comes back as a string on both (arbitrary precision).
+*/
+var OID_INT8 = 20;
+var OID_DATE = 1082;
+var OID_INTERVAL = 1186;
+var identity = (v) => v;
+/** Wrap a query runner in the tagged-template + `.query()` `Sql` surface. */
+function toSql(run) {
+	const sql = (async (strings, ...values) => {
+		let text = strings[0];
+		for (let i = 0; i < values.length; i += 1) text += `$${i + 1}${strings[i + 1]}`;
+		return run(text, values);
+	});
+	sql.query = (text, params = []) => run(text, params);
+	return sql;
+}
+function createNeonSql() {
+	globalRef.__pgSqlPromise__ ??= (async () => {
+		const { Pool, types } = await import("../_libs/pg.mjs").then((n) => n.n);
+		types.setTypeParser(OID_INT8, Number);
+		types.setTypeParser(OID_DATE, identity);
+		types.setTypeParser(OID_INTERVAL, identity);
+		const pool = new Pool({ connectionString: databaseUrl$1 });
+		return toSql(async (text, params) => {
+			return (await pool.query(text, params)).rows;
+		});
+	})().catch((err) => {
+		globalRef.__pgSqlPromise__ = void 0;
+		throw err;
+	});
+	return globalRef.__pgSqlPromise__;
+}
+async function createPgliteSql() {
+	globalRef.__pgliteInstance__ ??= (async () => {
+		const { PGlite } = await import("../_libs/electric-sql__pglite.mjs").then((n) => n.t);
+		const pg = new PGlite({ parsers: {
+			[OID_INT8]: Number,
+			[OID_DATE]: identity,
+			[OID_INTERVAL]: identity
+		} });
+		await pg.waitReady;
+		await pg.exec("create table if not exists _migrations (name text primary key, applied_at timestamptz not null default now())");
+		return pg;
+	})().catch((err) => {
+		globalRef.__pgliteInstance__ = void 0;
+		throw err;
+	});
+	const pg = await globalRef.__pgliteInstance__;
+	const migrate = async () => {
+		const migrations = /* #__PURE__ */ Object.assign({
+			"/migrations/0001_auth.sql": _0001_auth_default,
+			"/migrations/0002_confession_community.sql": _0002_confession_community_default,
+			"/migrations/0003_leaderboard_comments.sql": _0003_leaderboard_comments_default
+		});
+		const doneRows = await pg.query("select name from _migrations");
+		const done = new Set(doneRows.rows.map((r) => r.name));
+		for (const [path, text] of Object.entries(migrations).sort(([a], [b]) => a.localeCompare(b))) {
+			const name = path.split("/").pop();
+			if (done.has(name)) continue;
+			await pg.transaction(async (tx) => {
+				await tx.exec(text);
+				await tx.query("insert into _migrations (name) values ($1)", [name]);
+			});
+		}
+	};
+	const pass = (globalRef.__pgliteMigrateChain__ ?? Promise.resolve()).catch(() => void 0).then(migrate);
+	globalRef.__pgliteMigrateChain__ = pass;
+	await pass;
+	return toSql(async (text, params) => {
+		return (await pg.query(text, params)).rows;
+	});
+}
+var sqlPromise = null;
+async function createSql() {
+	if (typeof window !== "undefined") throw new Error("@/lib/db is server-only — call getSql() from a createServerFn handler or a server route loader, never from client code.");
+	return dbSource === "neon" ? createNeonSql() : createPgliteSql();
+}
+/**
+* Get the shared, **server-only** SQL client. Neon when `DATABASE_URL` is set,
+* otherwise the local PGLite fallback. Memoized — safe to call per request.
+*
+* Schema comes from `migrations/*.sql`, auto-applied before the first query on
+* both backends — define tables there, never inline in server functions.
+*/
+function getSql() {
+	sqlPromise ??= createSql().catch((err) => {
+		sqlPromise = null;
+		throw err;
+	});
+	return sqlPromise;
+}
+/**
+* The shared PGLite instance (preview only), with `migrations/*.sql` applied.
+* Lets Better Auth persist to the SAME embedded DB as app data in preview (via a
+* Kysely dialect). Throws when `DATABASE_URL` is set (that path uses Neon).
+*/
+async function getPglite() {
+	if (dbSource !== "pglite") throw new Error("getPglite() is only available on the PGLite fallback (no DATABASE_URL)");
+	await getSql();
+	const pg = await globalRef.__pgliteInstance__;
+	if (!pg) throw new Error("PGLite instance failed to initialize");
+	return pg;
+}
+/**
+* Finish DB bootstrap before the server handles traffic.
+*
+* - **PGLite** (preview / no `DATABASE_URL`): open the in-memory DB and apply
+*   `migrations/*.sql`. Idempotent — concurrent callers share one promise.
+* - **Neon**: no-op (pool is created lazily on first query).
+*
+* Vite `configureServer` awaits this at dev startup; production imports of this
+* module kick it off immediately (see bottom of file).
+*/
+function ensureDbReady() {
+	if (dbSource !== "pglite") return Promise.resolve();
+	return getSql().then(() => void 0);
+}
+var globalBoot = globalThis;
+if (typeof window === "undefined" && dbSource === "pglite") globalBoot.__pgBootstrapPromise__ ??= ensureDbReady().catch((err) => {
+	globalBoot.__pgBootstrapPromise__ = void 0;
+	console.error("[db] PGLite bootstrap failed:", err);
+	throw err;
+});
+/**
+* Server-only community bank, votes, leaderboard, and used feed.
+*/
+function confessionIdFromBody(body) {
+	return createHash("sha256").update(body).digest("hex").slice(0, 24);
+}
+async function ensureSchema(sql) {
+	await sql.query(`
+    CREATE TABLE IF NOT EXISTS confession_bank (
+      id TEXT PRIMARY KEY,
+      body TEXT NOT NULL UNIQUE,
+      style TEXT NOT NULL,
+      ups INTEGER NOT NULL DEFAULT 0,
+      downs INTEGER NOT NULL DEFAULT 0,
+      neutrals INTEGER NOT NULL DEFAULT 0,
+      score INTEGER NOT NULL DEFAULT 0,
+      used_count INTEGER NOT NULL DEFAULT 0,
+      created_at TIMESTAMPTZ NOT NULL DEFAULT now()
+    )
+  `);
+	await sql.query(`
+    ALTER TABLE confession_bank
+    ADD COLUMN IF NOT EXISTS used_count INTEGER NOT NULL DEFAULT 0
+  `);
+	await sql.query(`
+    CREATE INDEX IF NOT EXISTS confession_bank_score_idx
+    ON confession_bank (score DESC, ups DESC)
+  `);
+	await sql.query(`
+    CREATE INDEX IF NOT EXISTS confession_bank_used_idx
+    ON confession_bank (used_count DESC, score DESC)
+  `);
+	await sql.query(`
+    CREATE TABLE IF NOT EXISTS confession_votes (
+      voter_id TEXT NOT NULL,
+      confession_id TEXT NOT NULL REFERENCES confession_bank (id) ON DELETE CASCADE,
+      vote SMALLINT NOT NULL CHECK (vote IN (-1, 0, 1)),
+      updated_at TIMESTAMPTZ NOT NULL DEFAULT now(),
+      PRIMARY KEY (voter_id, confession_id)
+    )
+  `);
+	await sql.query(`
+    CREATE INDEX IF NOT EXISTS confession_votes_confession_idx
+    ON confession_votes (confession_id)
+  `);
+}
+var bankReady = null;
+async function withBank() {
+	const sql = await getSql();
+	bankReady ??= (async () => {
+		await ensureSchema(sql);
+		for (const line of ALL_CONFESSION_LINES) {
+			const id = confessionIdFromBody(line.body);
+			await sql`
+        INSERT INTO confession_bank (id, body, style, ups, downs, neutrals, score, used_count)
+        VALUES (${id}, ${line.body}, ${line.style}, 0, 0, 0, 0, 0)
+        ON CONFLICT (body) DO NOTHING
+      `;
+		}
+	})().catch((err) => {
+		bankReady = null;
+		throw err;
+	});
+	await bankReady;
+	return sql;
+}
+async function getCommunityPrefs() {
+	const rows = await (await withBank())`
+    SELECT body, style, ups, downs, neutrals, score
+    FROM confession_bank
+  `;
+	const bodyScores = {};
+	const styleScores = {};
+	for (const r of rows) {
+		bodyScores[r.body] = {
+			ups: Number(r.ups) || 0,
+			downs: Number(r.downs) || 0,
+			neutrals: Number(r.neutrals) || 0,
+			score: Number(r.score) || 0
+		};
+		const style = r.style;
+		const weight = (Number(r.ups) || 0) - (Number(r.downs) || 0);
+		styleScores[style] = (styleScores[style] ?? 0) + weight;
+	}
+	for (const k of Object.keys(styleScores)) {
+		const v = styleScores[k] ?? 0;
+		styleScores[k] = Math.max(-12, Math.min(12, Math.round(v / 3)));
+	}
+	return {
+		bodyScores,
+		styleScores
+	};
+}
+async function getVoterVotes(voterId) {
+	if (!voterId || voterId.length < 8) return {};
+	const rows = await (await withBank())`
+    SELECT b.body, v.vote
+    FROM confession_votes v
+    JOIN confession_bank b ON b.id = v.confession_id
+    WHERE v.voter_id = ${voterId}
+  `;
+	const out = {};
+	for (const r of rows) {
+		const vote = Number(r.vote);
+		if (vote === 1 || vote === -1) out[r.body] = vote;
+	}
+	return out;
+}
+async function castCommunityVote(input) {
+	const { voterId, body, style, vote } = input;
+	if (!voterId || voterId.length < 8 || voterId.length > 80) throw new Error("Invalid voter");
+	if (!body || body.length > 500) throw new Error("Invalid confession");
+	if (vote !== 1 && vote !== -1) throw new Error("Invalid vote");
+	const sql = await withBank();
+	const id = confessionIdFromBody(body);
+	await sql`
+    INSERT INTO confession_bank (id, body, style, ups, downs, neutrals, score, used_count)
+    VALUES (${id}, ${body}, ${style}, 0, 0, 0, 0, 0)
+    ON CONFLICT (body) DO NOTHING
+  `;
+	await sql`
+    UPDATE confession_bank SET style = ${style} WHERE id = ${id}
+  `;
+	const existing = await sql`
+    SELECT vote FROM confession_votes
+    WHERE voter_id = ${voterId} AND confession_id = ${id}
+  `;
+	const prev = existing[0] ? Number(existing[0].vote) : null;
+	if (prev === vote) {
+		await sql`
+      DELETE FROM confession_votes
+      WHERE voter_id = ${voterId} AND confession_id = ${id}
+    `;
+		await applyDelta(sql, id, prev, null);
+		return {
+			tally: await fetchTally(sql, id),
+			myVote: null
+		};
+	}
+	if (prev === null) {
+		await sql`
+      INSERT INTO confession_votes (voter_id, confession_id, vote, updated_at)
+      VALUES (${voterId}, ${id}, ${vote}, now())
+    `;
+		await applyDelta(sql, id, null, vote);
+	} else {
+		await sql`
+      UPDATE confession_votes
+      SET vote = ${vote}, updated_at = now()
+      WHERE voter_id = ${voterId} AND confession_id = ${id}
+    `;
+		await applyDelta(sql, id, prev, vote);
+	}
+	return {
+		tally: await fetchTally(sql, id),
+		myVote: vote
+	};
+}
+/** Mark a confession as used (posted) — lands in the Used section */
+async function markConfessionUsed(input) {
+	const { body, style } = input;
+	if (!body || body.length > 500) throw new Error("Invalid confession");
+	const sql = await withBank();
+	const id = confessionIdFromBody(body);
+	await sql`
+    INSERT INTO confession_bank (id, body, style, ups, downs, neutrals, score, used_count)
+    VALUES (${id}, ${body}, ${style}, 0, 0, 0, 0, 0)
+    ON CONFLICT (body) DO NOTHING
+  `;
+	await sql`
+    UPDATE confession_bank
+    SET used_count = used_count + 1, style = ${style}
+    WHERE id = ${id}
+  `;
+	const rows = await sql`
+    SELECT used_count FROM confession_bank WHERE id = ${id}
+  `;
+	const tally = await fetchTally(sql, id);
+	return {
+		usedCount: Number(rows[0]?.used_count) || 1,
+		tally
+	};
+}
+async function applyDelta(sql, id, from, to) {
+	const d = {
+		ups: 0,
+		downs: 0,
+		neutrals: 0
+	};
+	const dec = (v) => {
+		if (v === 1) d.ups -= 1;
+		else if (v === -1) d.downs -= 1;
+		else d.neutrals -= 1;
+	};
+	const inc = (v) => {
+		if (v === 1) d.ups += 1;
+		else if (v === -1) d.downs += 1;
+		else d.neutrals += 1;
+	};
+	if (from !== null) dec(from);
+	if (to !== null) inc(to);
+	await sql`
+    UPDATE confession_bank
+    SET
+      ups = GREATEST(0, ups + ${d.ups}),
+      downs = GREATEST(0, downs + ${d.downs}),
+      neutrals = GREATEST(0, neutrals + ${d.neutrals})
+    WHERE id = ${id}
+  `;
+	await sql`
+    UPDATE confession_bank
+    SET score = ups - downs
+    WHERE id = ${id}
+  `;
+}
+async function fetchTally(sql, id) {
+	const r = (await sql`
+    SELECT ups, downs, neutrals, score FROM confession_bank WHERE id = ${id}
+  `)[0];
+	return {
+		ups: Number(r?.ups) || 0,
+		downs: Number(r?.downs) || 0,
+		neutrals: Number(r?.neutrals) || 0,
+		score: Number(r?.score) || 0
+	};
+}
+function mapRows(rows) {
+	return rows.map((r) => ({
+		body: r.body,
+		style: r.style,
+		tally: {
+			ups: Number(r.ups) || 0,
+			downs: Number(r.downs) || 0,
+			neutrals: Number(r.neutrals) || 0,
+			score: Number(r.score) || 0
+		},
+		usedCount: Number(r.used_count) || 0
+	}));
+}
+/** Leaderboard: most upvoted confessions (score + ups) */
+async function getLeaderboard(limit = 50) {
+	return mapRows(await (await withBank())`
+    SELECT body, style, ups, downs, neutrals, score, used_count
+    FROM confession_bank
+    WHERE ups > 0
+    ORDER BY score DESC, ups DESC, downs ASC, created_at DESC
+    LIMIT ${limit}
+  `);
+}
+/** Used feed: confessions others have marked as used / posted */
+async function getUsedConfessions(limit = 50) {
+	return mapRows(await (await withBank())`
+    SELECT body, style, ups, downs, neutrals, score, used_count
+    FROM confession_bank
+    WHERE used_count > 0
+    ORDER BY used_count DESC, score DESC, ups DESC, created_at DESC
+    LIMIT ${limit}
+  `);
+}
+function json(data, status = 200) {
+	return new Response(JSON.stringify(data), {
+		status,
+		headers: {
+			"content-type": "application/json; charset=utf-8",
+			"cache-control": "no-store"
+		}
+	});
+}
+var Route$1 = createFileRoute("/api/confessions")({ server: { handlers: {
+	/** Community prefs + leaderboard + used feed + this voter's votes */
+	GET: async ({ request }) => {
+		try {
+			const voterId = new URL(request.url).searchParams.get("voterId") ?? "";
+			const [prefs, leaderboard, used, myVotes] = await Promise.all([
+				getCommunityPrefs(),
+				getLeaderboard(50),
+				getUsedConfessions(50),
+				voterId ? getVoterVotes(voterId) : Promise.resolve({})
+			]);
+			return json({
+				ok: true,
+				prefs,
+				leaderboard,
+				used,
+				myVotes
+			});
+		} catch (err) {
+			console.error("[api/confessions GET]", err);
+			return json({
+				ok: false,
+				error: err instanceof Error ? err.message : "Failed"
+			}, 500);
+		}
+	},
+	/**
+	* POST:
+	* - vote: { voterId, body, style, vote: 1|-1 }
+	* - used: { action: "used", body, style }
+	*/
+	POST: async ({ request }) => {
+		try {
+			const body = await request.json();
+			if ((body.action ?? "vote") === "used") {
+				if (!body.body || !body.style) return json({
+					ok: false,
+					error: "Missing fields"
+				}, 400);
+				const result = await markConfessionUsed({
+					body: body.body,
+					style: body.style
+				});
+				const [leaderboard, used] = await Promise.all([getLeaderboard(50), getUsedConfessions(50)]);
+				return json({
+					ok: true,
+					...result,
+					leaderboard,
+					used
+				});
+			}
+			const vote = body.vote;
+			if (vote !== 1 && vote !== -1) return json({
+				ok: false,
+				error: "vote must be 1 or -1"
+			}, 400);
+			if (!body.voterId || !body.body || !body.style) return json({
+				ok: false,
+				error: "Missing fields"
+			}, 400);
+			const result = await castCommunityVote({
+				voterId: body.voterId,
+				body: body.body,
+				style: body.style,
+				vote
+			});
+			const [prefs, leaderboard, used] = await Promise.all([
+				getCommunityPrefs(),
+				getLeaderboard(50),
+				getUsedConfessions(50)
+			]);
+			return json({
+				ok: true,
+				...result,
+				prefs,
+				leaderboard,
+				used
+			});
+		} catch (err) {
+			console.error("[api/confessions POST]", err);
+			return json({
+				ok: false,
+				error: err instanceof Error ? err.message : "Failed"
+			}, 500);
+		}
+	}
+} } });
 var generateRandomString = createRandomStringGenerator("a-z", "0-9", "A-Z", "-_");
 async function signJWT(payload, secret, expiresIn = 3600) {
 	return await new SignJWT(payload).setProtectedHeader({ alg: "HS256" }).setIssuedAt().setExpirationTime(Math.floor(Date.now() / 1e3) + expiresIn).sign(new TextEncoder().encode(secret));
@@ -354,12 +863,12 @@ function formatEnvelope(version, ciphertext) {
 	return `${ENVELOPE_PREFIX}${version}$${ciphertext}`;
 }
 async function rawEncrypt(secret, data) {
-	const keyAsBytes = await createHash("SHA-256").digest(secret);
+	const keyAsBytes = await createHash$1("SHA-256").digest(secret);
 	const dataAsBytes = utf8ToBytes(data);
 	return bytesToHex(managedNonce(xchacha20poly1305)(new Uint8Array(keyAsBytes)).encrypt(dataAsBytes));
 }
 async function rawDecrypt(secret, hex) {
-	const keyAsBytes = await createHash("SHA-256").digest(secret);
+	const keyAsBytes = await createHash$1("SHA-256").digest(secret);
 	const dataAsBytes = hexToBytes(hex);
 	const chacha = managedNonce(xchacha20poly1305)(new Uint8Array(keyAsBytes));
 	return new TextDecoder().decode(chacha.decrypt(dataAsBytes));
@@ -2380,7 +2889,7 @@ var revokeOtherSessions = createAuthEndpoint("/revoke-other-sessions", {
 	return ctx.json({ status: true });
 });
 var defaultKeyHasher = async (identifier) => {
-	const hash = await createHash("SHA-256").digest(new TextEncoder().encode(identifier));
+	const hash = await createHash$1("SHA-256").digest(new TextEncoder().encode(identifier));
 	return base64Url.encode(new Uint8Array(hash), { padding: false });
 };
 async function processIdentifier(identifier, option) {
@@ -3419,7 +3928,7 @@ var createInternalAdapter = (adapter, ctx) => {
 		* is best-effort there (it is intended for development and tests).
 		*/
 		reserveVerificationValue: async (data) => {
-			const reservationId = base64Url.encode(new Uint8Array(await createHash("SHA-256").digest(new TextEncoder().encode("reserve:" + data.identifier))), { padding: false });
+			const reservationId = base64Url.encode(new Uint8Array(await createHash$1("SHA-256").digest(new TextEncoder().encode("reserve:" + data.identifier))), { padding: false });
 			const storageOption = getStorageOption(data.identifier, options.verification?.storeIdentifier);
 			const storedIdentifier = await processIdentifier(data.identifier, storageOption);
 			if (secondaryStorage && !options.verification?.storeInDatabase) {
@@ -8563,153 +9072,6 @@ var tanstackStartCookies = () => {
 		}] }
 	};
 };
-var _0001_auth_default = "-- Better Auth schema (identity + sessions for \"Sign in with Grok\").\n--\n-- Generated by the Better Auth CLI for its Postgres adapter — DO NOT EDIT by\n-- hand. `@/lib/auth/server` runs Better Auth against these tables when\n-- DATABASE_URL is set. The columns are camelCase and MUST stay double-quoted so\n-- Postgres preserves the case Better Auth queries by.\n--\n-- Migrations in this folder are the single source of truth for your schema. They\n-- apply to Neon during the Vercel build (`npm run build`) and to the local\n-- PGLite fallback automatically on startup, so dev matches production. Applied\n-- files are recorded by name in `_migrations` and NEVER run again.\n--\n-- Put YOUR app's schema in NEW ordered files (0002_*.sql, 0003_*.sql, …), never\n-- in this one. For app tables, prefer snake_case and give per-user tables a\n-- `user_id TEXT NOT NULL` column (TEXT, not UUID — the preview dev user id is\n-- the string 'dev-user'), then scope every query to the authenticated user\n-- server-side (see the `neon` + `auth` skills and src/lib/auth/verify.server.ts).\n\ncreate table if not exists \"user\" (\n  \"id\" text not null primary key,\n  \"name\" text not null,\n  \"email\" text not null unique,\n  \"emailVerified\" boolean not null,\n  \"image\" text,\n  \"createdAt\" timestamptz default CURRENT_TIMESTAMP not null,\n  \"updatedAt\" timestamptz default CURRENT_TIMESTAMP not null\n);\n\ncreate table if not exists \"session\" (\n  \"id\" text not null primary key,\n  \"expiresAt\" timestamptz not null,\n  \"token\" text not null unique,\n  \"createdAt\" timestamptz default CURRENT_TIMESTAMP not null,\n  \"updatedAt\" timestamptz not null,\n  \"ipAddress\" text,\n  \"userAgent\" text,\n  \"userId\" text not null references \"user\" (\"id\") on delete cascade\n);\n\ncreate table if not exists \"account\" (\n  \"id\" text not null primary key,\n  \"accountId\" text not null,\n  \"providerId\" text not null,\n  \"userId\" text not null references \"user\" (\"id\") on delete cascade,\n  \"accessToken\" text,\n  \"refreshToken\" text,\n  \"idToken\" text,\n  \"accessTokenExpiresAt\" timestamptz,\n  \"refreshTokenExpiresAt\" timestamptz,\n  \"scope\" text,\n  \"password\" text,\n  \"createdAt\" timestamptz default CURRENT_TIMESTAMP not null,\n  \"updatedAt\" timestamptz not null\n);\n\ncreate table if not exists \"verification\" (\n  \"id\" text not null primary key,\n  \"identifier\" text not null,\n  \"value\" text not null,\n  \"expiresAt\" timestamptz not null,\n  \"createdAt\" timestamptz default CURRENT_TIMESTAMP not null,\n  \"updatedAt\" timestamptz default CURRENT_TIMESTAMP not null\n);\n\ncreate index if not exists \"session_userId_idx\" on \"session\" (\"userId\");\ncreate index if not exists \"account_userId_idx\" on \"account\" (\"userId\");\ncreate index if not exists \"verification_identifier_idx\" on \"verification\" (\"identifier\");\n";
-var rawDatabaseUrl = typeof process !== "undefined" ? process.env.DATABASE_URL : void 0;
-var databaseUrl$1 = rawDatabaseUrl && rawDatabaseUrl.trim() ? rawDatabaseUrl : void 0;
-/**
-* Active backend: real **Neon** when `DATABASE_URL` is set (deployed / configured
-* sandbox), otherwise a local embedded **PGLite** (Postgres compiled to WASM) so
-* the app has a working database even with nothing configured — the live preview
-* included. Swap in Neon later by just setting `DATABASE_URL`; no code changes.
-*/
-var dbSource = databaseUrl$1 ? "neon" : "pglite";
-/**
-* Init state lives on globalThis as promises: dev HMR creates new instances of
-* this module, and two instances racing module-level state would open a second
-* pool or run two concurrent PGLite migration passes (whose duplicate
-* `_migrations` insert rejects — and would get memoized, poisoning every later
-* `getSql()`). A failed init clears its slot so the next call retries.
-*/
-var globalRef = globalThis;
-/**
-* Result-type parity: Postgres sends every value as text plus a type OID — the
-* JS value is the DRIVER's parsing choice, and pg and PGLite disagree (pg:
-* int8 -> string, date -> local-midnight Date; PGLite: int8 -> BigInt, which
-* JSON.stringify rejects, date -> UTC Date). Normalize both so preview and
-* production return identical, JSON-safe shapes:
-*   int8/bigint (incl. count(*)) -> number (past 2^53 loses precision — cast
-*                                   `::text` if you ever need huge integers)
-*   date                         -> 'YYYY-MM-DD' string
-*   interval                     -> Postgres interval text
-* numeric already comes back as a string on both (arbitrary precision).
-*/
-var OID_INT8 = 20;
-var OID_DATE = 1082;
-var OID_INTERVAL = 1186;
-var identity = (v) => v;
-/** Wrap a query runner in the tagged-template + `.query()` `Sql` surface. */
-function toSql(run) {
-	const sql = (async (strings, ...values) => {
-		let text = strings[0];
-		for (let i = 0; i < values.length; i += 1) text += `$${i + 1}${strings[i + 1]}`;
-		return run(text, values);
-	});
-	sql.query = (text, params = []) => run(text, params);
-	return sql;
-}
-function createNeonSql() {
-	globalRef.__pgSqlPromise__ ??= (async () => {
-		const { Pool, types } = await import("../_libs/pg.mjs").then((n) => n.n);
-		types.setTypeParser(OID_INT8, Number);
-		types.setTypeParser(OID_DATE, identity);
-		types.setTypeParser(OID_INTERVAL, identity);
-		const pool = new Pool({ connectionString: databaseUrl$1 });
-		return toSql(async (text, params) => {
-			return (await pool.query(text, params)).rows;
-		});
-	})().catch((err) => {
-		globalRef.__pgSqlPromise__ = void 0;
-		throw err;
-	});
-	return globalRef.__pgSqlPromise__;
-}
-async function createPgliteSql() {
-	globalRef.__pgliteInstance__ ??= (async () => {
-		const { PGlite } = await import("../_libs/electric-sql__pglite.mjs").then((n) => n.t);
-		const pg = new PGlite({ parsers: {
-			[OID_INT8]: Number,
-			[OID_DATE]: identity,
-			[OID_INTERVAL]: identity
-		} });
-		await pg.waitReady;
-		await pg.exec("create table if not exists _migrations (name text primary key, applied_at timestamptz not null default now())");
-		return pg;
-	})().catch((err) => {
-		globalRef.__pgliteInstance__ = void 0;
-		throw err;
-	});
-	const pg = await globalRef.__pgliteInstance__;
-	const migrate = async () => {
-		const migrations = /* #__PURE__ */ Object.assign({ "/migrations/0001_auth.sql": _0001_auth_default });
-		const doneRows = await pg.query("select name from _migrations");
-		const done = new Set(doneRows.rows.map((r) => r.name));
-		for (const [path, text] of Object.entries(migrations).sort(([a], [b]) => a.localeCompare(b))) {
-			const name = path.split("/").pop();
-			if (done.has(name)) continue;
-			await pg.transaction(async (tx) => {
-				await tx.exec(text);
-				await tx.query("insert into _migrations (name) values ($1)", [name]);
-			});
-		}
-	};
-	const pass = (globalRef.__pgliteMigrateChain__ ?? Promise.resolve()).catch(() => void 0).then(migrate);
-	globalRef.__pgliteMigrateChain__ = pass;
-	await pass;
-	return toSql(async (text, params) => {
-		return (await pg.query(text, params)).rows;
-	});
-}
-var sqlPromise = null;
-async function createSql() {
-	if (typeof window !== "undefined") throw new Error("@/lib/db is server-only — call getSql() from a createServerFn handler or a server route loader, never from client code.");
-	return dbSource === "neon" ? createNeonSql() : createPgliteSql();
-}
-/**
-* Get the shared, **server-only** SQL client. Neon when `DATABASE_URL` is set,
-* otherwise the local PGLite fallback. Memoized — safe to call per request.
-*
-* Schema comes from `migrations/*.sql`, auto-applied before the first query on
-* both backends — define tables there, never inline in server functions.
-*/
-function getSql() {
-	sqlPromise ??= createSql().catch((err) => {
-		sqlPromise = null;
-		throw err;
-	});
-	return sqlPromise;
-}
-/**
-* The shared PGLite instance (preview only), with `migrations/*.sql` applied.
-* Lets Better Auth persist to the SAME embedded DB as app data in preview (via a
-* Kysely dialect). Throws when `DATABASE_URL` is set (that path uses Neon).
-*/
-async function getPglite() {
-	if (dbSource !== "pglite") throw new Error("getPglite() is only available on the PGLite fallback (no DATABASE_URL)");
-	await getSql();
-	const pg = await globalRef.__pgliteInstance__;
-	if (!pg) throw new Error("PGLite instance failed to initialize");
-	return pg;
-}
-/**
-* Finish DB bootstrap before the server handles traffic.
-*
-* - **PGLite** (preview / no `DATABASE_URL`): open the in-memory DB and apply
-*   `migrations/*.sql`. Idempotent — concurrent callers share one promise.
-* - **Neon**: no-op (pool is created lazily on first query).
-*
-* Vite `configureServer` awaits this at dev startup; production imports of this
-* module kick it off immediately (see bottom of file).
-*/
-function ensureDbReady() {
-	if (dbSource !== "pglite") return Promise.resolve();
-	return getSql().then(() => void 0);
-}
-var globalBoot = globalThis;
-if (typeof window === "undefined" && dbSource === "pglite") globalBoot.__pgBootstrapPromise__ ??= ensureDbReady().catch((err) => {
-	globalBoot.__pgBootstrapPromise__ = void 0;
-	console.error("[db] PGLite bootstrap failed:", err);
-	throw err;
-});
 /** Factory used by `auth/server.ts`: `pgliteDialect(() => getPglite())`. */
 function pgliteDialect(getClient) {
 	return {
@@ -8935,23 +9297,28 @@ var Route = createFileRoute("/api/auth/$")({ server: { handlers: {
 	POST: ({ request }) => auth.handler(request)
 } } });
 var rootRouteChildren = {
-	IndexRoute: Route$2.update({
+	IndexRoute: Route$3.update({
 		id: "/",
 		path: "/",
-		getParentRoute: () => Route$3
+		getParentRoute: () => Route$4
 	}),
-	LoginRoute: Route$1.update({
+	LoginRoute: Route$2.update({
 		id: "/login",
 		path: "/login",
-		getParentRoute: () => Route$3
+		getParentRoute: () => Route$4
+	}),
+	ApiConfessionsRoute: Route$1.update({
+		id: "/api/confessions",
+		path: "/api/confessions",
+		getParentRoute: () => Route$4
 	}),
 	ApiAuthSplatRoute: Route.update({
 		id: "/api/auth/$",
 		path: "/api/auth/$",
-		getParentRoute: () => Route$3
+		getParentRoute: () => Route$4
 	})
 };
-var routeTree = Route$3._addFileChildren(rootRouteChildren)._addFileTypes();
+var routeTree = Route$4._addFileChildren(rootRouteChildren)._addFileTypes();
 function getRouter() {
 	return createRouter({
 		routeTree,

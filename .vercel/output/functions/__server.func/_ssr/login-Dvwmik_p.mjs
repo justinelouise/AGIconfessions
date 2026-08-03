@@ -1,14 +1,12 @@
 import { o as __toESM } from "../_runtime.mjs";
 import { Bt as capitalizeFirstLetter, Lt as createFetch, Rt as isSafeUrlScheme, Vt as toKebabCase } from "../_libs/@better-auth/core+[...].mjs";
-import { n as PACKAGE_VERSION, r as getBaseURL, t as GENERIC_OAUTH_ERROR_CODES } from "./error-codes-DmebaV2i.mjs";
+import { i as getBaseURL, n as GROK_PROVIDERS, r as PACKAGE_VERSION, t as GENERIC_OAUTH_ERROR_CODES } from "./providers-DD9Wq7fi.mjs";
 import { n as require_react } from "../_libs/@radix-ui/react-compose-refs+[...].mjs";
-import { M as require_jsx_runtime } from "../_libs/@tanstack/react-router+[...].mjs";
+import { M as require_jsx_runtime, h as Link } from "../_libs/@tanstack/react-router+[...].mjs";
+import { t as Button } from "./button-BxGn7jDk.mjs";
 import { n as defu } from "../_libs/defu.mjs";
-import { t as Slot } from "../_libs/radix-ui__react-slot.mjs";
-import { n as clsx, t as cva } from "../_libs/class-variance-authority+clsx.mjs";
-import { t as twMerge } from "../_libs/tailwind-merge.mjs";
 import { i as atom, n as onMount, r as onSet, t as listenKeys } from "../_libs/nanostores.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/client-DpDmp4x-.js
+//#region node_modules/.nitro/vite/services/ssr/assets/login-Dvwmik_p.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 var PROTO_POLLUTION_PATTERNS = {
@@ -78,42 +76,6 @@ function betterJSONParse(value, options = {}) {
 function parseJSON(value, options = { strict: true }) {
 	return betterJSONParse(value, options);
 }
-function cn(...inputs) {
-	return twMerge(clsx(inputs));
-}
-var buttonVariants = cva("inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-[var(--radius-sm)] text-sm font-medium transition-colors transition-transform duration-150 disabled:pointer-events-none disabled:opacity-50 active:scale-[0.98] outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--color-bg)]", {
-	variants: {
-		variant: {
-			default: "bg-[var(--color-accent)] text-[var(--color-accent-fg)] hover:bg-[var(--color-accent-dim)]",
-			secondary: "bg-[var(--color-surface)] text-[var(--color-fg)] border border-[var(--color-border)] hover:bg-[var(--color-surface-hover)]",
-			ghost: "text-[var(--color-fg)] hover:bg-[var(--color-surface)]",
-			danger: "bg-[var(--color-drama)]/15 text-[var(--color-drama)] border border-[var(--color-drama)]/30 hover:bg-[var(--color-drama)]/25",
-			outline: "border border-[var(--color-border-strong)] bg-transparent text-[var(--color-fg)] hover:bg-[var(--color-surface)]"
-		},
-		size: {
-			default: "h-10 px-4 py-2",
-			sm: "h-8 rounded-[var(--radius-xs)] px-3 text-xs",
-			lg: "h-11 rounded-[var(--radius-md)] px-6",
-			icon: "h-10 w-10"
-		}
-	},
-	defaultVariants: {
-		variant: "default",
-		size: "default"
-	}
-});
-var Button = import_react.forwardRef(({ className, variant, size, asChild = false, ...props }, ref) => {
-	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(asChild ? Slot : "button", {
-		className: cn(buttonVariants({
-			variant,
-			size,
-			className
-		})),
-		ref,
-		...props
-	});
-});
-Button.displayName = "Button";
 var genericOAuthClient = () => {
 	return {
 		id: "generic-oauth-client",
@@ -905,14 +867,42 @@ function waitForPopupToken(popup) {
 		window.addEventListener("message", onMessage);
 	});
 }
-/** Sign out of THIS app's local session, clear the preview token, then redirect. */
-async function signOut(redirectTo = "/") {
-	try {
-		await authClient.signOut();
-	} finally {
-		setBearerToken(null);
-	}
-	window.location.href = redirectTo;
+function Login() {
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("main", {
+		className: "grid min-h-[calc(100dvh-var(--grok-banner-h,0px))] place-items-center bg-[var(--color-bg)] bg-grid px-4 py-10",
+		children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+			className: "w-full max-w-sm rounded-[var(--radius-xl)] border border-[var(--color-border)] bg-[var(--color-bg-elevated)] p-6",
+			children: [
+				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+					className: "font-mono text-xs text-[var(--color-muted)]",
+					children: "Thread Course"
+				}),
+				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h1", {
+					className: "mt-1 font-display text-xl font-semibold tracking-tight",
+					children: "Sign in"
+				}),
+				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+					className: "mt-2 text-sm text-[var(--color-muted)]",
+					children: "Optional — play as guest anytime. Sign in if you want your Grok identity on the badge."
+				}),
+				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+					className: "mt-5 space-y-2",
+					children: GROK_PROVIDERS.map((p) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Button, {
+						type: "button",
+						variant: "secondary",
+						className: "w-full",
+						onClick: () => signIn(p.providerId, { callbackURL: "/" }),
+						children: ["Continue with ", p.label]
+					}, p.providerId))
+				}),
+				/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Link, {
+					to: "/",
+					className: "mt-5 block text-center text-sm text-[var(--color-accent-dim)] hover:text-[var(--color-accent)]",
+					children: "Back to lobby"
+				})
+			]
+		})
+	});
 }
 //#endregion
-export { signOut as a, signIn as i, authClient as n, cn as r, Button as t };
+export { Login as component };

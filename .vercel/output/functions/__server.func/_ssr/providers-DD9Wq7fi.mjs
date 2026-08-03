@@ -1,5 +1,5 @@
 import { gn as BetterAuthError, ln as env, yn as defineErrorCodes } from "../_libs/@better-auth/core+[...].mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/error-codes-DmebaV2i.js
+//#region node_modules/.nitro/vite/services/ssr/assets/providers-DD9Wq7fi.js
 /**
 * Escapes a character if it has a special meaning in regular expressions
 * and returns the character as is if it doesn't
@@ -346,5 +346,14 @@ var GENERIC_OAUTH_ERROR_CODES = defineErrorCodes({
 	ISSUER_MISMATCH: "OAuth issuer mismatch. The authorization server issuer does not match the expected value (RFC 9207).",
 	ISSUER_MISSING: "OAuth issuer parameter missing. The authorization server did not include the required iss parameter (RFC 9207)."
 });
+var GROK_PROVIDERS = [{
+	providerId: "grok-google",
+	idp: "google",
+	label: "Google"
+}, {
+	providerId: "grok-x",
+	idp: "twitter",
+	label: "X"
+}];
 //#endregion
-export { getOrigin as a, isRequestLike as c, getHost as i, resolveBaseURL as l, PACKAGE_VERSION as n, getProtocol as o, getBaseURL as r, isDynamicBaseURLConfig as s, GENERIC_OAUTH_ERROR_CODES as t, wildcardMatch as u };
+export { getHost as a, isDynamicBaseURLConfig as c, wildcardMatch as d, getBaseURL as i, isRequestLike as l, GROK_PROVIDERS as n, getOrigin as o, PACKAGE_VERSION as r, getProtocol as s, GENERIC_OAUTH_ERROR_CODES as t, resolveBaseURL as u };

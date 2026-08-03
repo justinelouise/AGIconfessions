@@ -8,12 +8,12 @@ export const Route = createFileRoute("/login")({
 
 function Login() {
   return (
-    <main className="grid min-h-[calc(100dvh-var(--grok-banner-h,0px))] place-items-center bg-[var(--color-bg)] bg-grid px-4 py-10">
+    <main className="grid min-h-[calc(100dvh-var(--grok-banner-h,0px))] place-items-center bg-[var(--color-bg)] px-4 py-10">
       <div className="w-full max-w-sm rounded-[var(--radius-xl)] border border-[var(--color-border)] bg-[var(--color-bg-elevated)] p-6">
-        <p className="font-mono text-xs text-[var(--color-muted)]">Thread Course</p>
+        <p className="font-mono text-xs text-[var(--color-muted)]">AGI Confessions</p>
         <h1 className="mt-1 font-display text-xl font-semibold tracking-tight">Sign in</h1>
         <p className="mt-2 text-sm text-[var(--color-muted)]">
-          Optional — play as guest anytime. Sign in if you want your Grok identity on the badge.
+          Optional — use the generator anytime. Sign in only if you want a saved identity.
         </p>
         <div className="mt-5 space-y-2">
           {authEnabled ? (
@@ -34,9 +34,9 @@ function Login() {
         </div>
         <Link
           to="/"
-          className="mt-5 block text-center text-sm text-[var(--color-accent-dim)] hover:text-[var(--color-accent)]"
+          className="mt-5 block text-center text-sm text-[var(--color-link)] hover:underline"
         >
-          Back to lobby
+          Back to confessions
         </Link>
       </div>
     </main>
