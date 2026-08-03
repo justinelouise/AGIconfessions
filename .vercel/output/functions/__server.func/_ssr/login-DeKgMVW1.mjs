@@ -6,7 +6,7 @@ import { M as require_jsx_runtime, h as Link } from "../_libs/@tanstack/react-ro
 import { t as Button } from "./button-BxGn7jDk.mjs";
 import { n as defu } from "../_libs/defu.mjs";
 import { i as atom, n as onMount, r as onSet, t as listenKeys } from "../_libs/nanostores.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/login-Dvwmik_p.js
+//#region node_modules/.nitro/vite/services/ssr/assets/login-DeKgMVW1.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 var PROTO_POLLUTION_PATTERNS = {
@@ -869,13 +869,13 @@ function waitForPopupToken(popup) {
 }
 function Login() {
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("main", {
-		className: "grid min-h-[calc(100dvh-var(--grok-banner-h,0px))] place-items-center bg-[var(--color-bg)] bg-grid px-4 py-10",
+		className: "grid min-h-[calc(100dvh-var(--grok-banner-h,0px))] place-items-center bg-[var(--color-bg)] px-4 py-10",
 		children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 			className: "w-full max-w-sm rounded-[var(--radius-xl)] border border-[var(--color-border)] bg-[var(--color-bg-elevated)] p-6",
 			children: [
 				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 					className: "font-mono text-xs text-[var(--color-muted)]",
-					children: "Thread Course"
+					children: "AGI Confessions"
 				}),
 				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h1", {
 					className: "mt-1 font-display text-xl font-semibold tracking-tight",
@@ -883,7 +883,7 @@ function Login() {
 				}),
 				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 					className: "mt-2 text-sm text-[var(--color-muted)]",
-					children: "Optional — play as guest anytime. Sign in if you want your Grok identity on the badge."
+					children: "Optional — use the generator anytime. Sign in only if you want a saved identity."
 				}),
 				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 					className: "mt-5 space-y-2",
@@ -897,8 +897,8 @@ function Login() {
 				}),
 				/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Link, {
 					to: "/",
-					className: "mt-5 block text-center text-sm text-[var(--color-accent-dim)] hover:text-[var(--color-accent)]",
-					children: "Back to lobby"
+					className: "mt-5 block text-center text-sm text-[var(--color-link)] hover:underline",
+					children: "Back to confessions"
 				})
 			]
 		})

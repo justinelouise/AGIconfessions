@@ -5,7 +5,7 @@ import { n as cn, t as Button } from "./button-BxGn7jDk.mjs";
 import { a as copyToClipboard, c as formatTextForCopy, d as surprisePin, i as bumpStyleScore, l as generatePinBatch, o as formatCaBlock, r as STYLE_LABELS, s as formatCommunityScore, t as AGI_TOKEN, u as remixConfession } from "./pins-E4OOG7Rb.mjs";
 import { a as Shuffle, c as ChevronUp, d as Bookmark, f as BookmarkCheck, i as Sparkles, l as ChevronDown, n as Trophy, o as RefreshCw, s as Copy, t as Users, u as Check } from "../_libs/lucide-react.mjs";
 import { n as create, t as persist } from "../_libs/zustand.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/routes-DuG7VP2G.js
+//#region node_modules/.nitro/vite/services/ssr/assets/routes-C-rxMoiI.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 function CaCopy({ variant = "bar", onCopied, className }) {
@@ -1230,7 +1230,7 @@ function Toast() {
 		children: toast
 	});
 }
-/** Approved Anyway — mod pin finder only. */
+/** AGI Confessions generator shell */
 function GameShell() {
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(PinFinder, {}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Toast, {})] });
 }
