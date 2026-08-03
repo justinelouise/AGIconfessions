@@ -1,0 +1,99 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@theme {
+  /* Reddit-adjacent dark feed */
+  --color-bg: #0b1416;
+  --color-bg-elevated: #1a1a1b;
+  --color-surface: #1a1a1b;
+  --color-surface-hover: #272729;
+  --color-fg: #d7dadc;
+  --color-muted: #818384;
+  --color-subtle: #6a6b6c;
+  --color-border: #343536;
+  --color-border-strong: #4a4b4c;
+  --color-accent: #ff4500;
+  --color-accent-fg: #ffffff;
+  --color-accent-dim: #d93900;
+  --color-upvote: #ff4500;
+  --color-downvote: #7193ff;
+  --color-meh: #a0a0a0;
+  --color-link: #4fbcff;
+  --color-flair: #818384;
+  --color-karma: #ff4500;
+  --color-drama: #e07a6a;
+  --color-vibe: #7193ff;
+  --color-pin: #ffd635;
+  --radius-xs: 0.25rem;
+  --radius-sm: 0.375rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+  --font-sans: "IBM Plex Sans", "Segoe UI", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  html {
+    color-scheme: dark;
+  }
+
+  body {
+    margin: 0;
+    min-height: 100dvh;
+    background: var(--color-bg);
+    color: var(--color-fg);
+    font-family: var(--font-sans);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-link);
+    outline-offset: 2px;
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: var(--font-display);
+  }
+
+  .font-mono {
+    font-family: var(--font-mono);
+  }
+
+  .tabular {
+    font-variant-numeric: tabular-nums;
+  }
+
+  .reddit-card {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+  }
+
+  .reddit-card:hover {
+    border-color: var(--color-border-strong);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
